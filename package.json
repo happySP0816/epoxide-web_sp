@@ -1,0 +1,19 @@
+{
+  "name": "@epoxide/web",
+  "version": "1.0.0",
+  "description": "epoxide.se web monorepo",
+  "workspaces": [
+    "packages/next",
+    "packages/nuxt",
+    "packages/sveltekit"
+  ],
+  "author": {
+    "name": "Tomas Tannergren",
+    "email": "epoxide@epoxide.se",
+    "url": "https://epoxide.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epoxide/epoxide-web.git"
+  }
+}

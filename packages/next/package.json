@@ -1,0 +1,14 @@
+{
+  "name": "@epoxide/web-next",
+  "version": "1.0.0",
+  "description": "epoxide.se web using Next 13",
+  "author": {
+    "name": "Tomas Tannergren",
+    "email": "epoxide@epoxide.se",
+    "url": "https://epoxide.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epoxide/epoxide-web.git"
+  }
+}

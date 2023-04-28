@@ -1,0 +1,14 @@
+{
+  "name": "@epoxide/web-nuxt",
+  "version": "1.0.0",
+  "description": "epoxide.se web using Nuxt 3",
+  "author": {
+    "name": "Tomas Tannergren",
+    "email": "epoxide@epoxide.se",
+    "url": "https://epoxide.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epoxide/epoxide-web.git"
+  }
+}
