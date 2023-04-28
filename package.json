@@ -7,6 +7,11 @@
     "packages/nuxt",
     "packages/sveltekit"
   ],
+  "scripts": {
+    "check": "npm run check --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "prepare": "husky install"
+  },
   "author": {
     "name": "Tomas Tannergren",
     "email": "epoxide@epoxide.se",
@@ -15,5 +20,18 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/epoxide/epoxide-web.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
   }
 }
