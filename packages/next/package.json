@@ -2,6 +2,12 @@
   "name": "@epoxide/web-next",
   "version": "1.0.0",
   "description": "epoxide.se web using Next 13",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
   "author": {
     "name": "Tomas Tannergren",
     "email": "epoxide@epoxide.se",
@@ -10,5 +16,16 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/epoxide/epoxide-web.git"
+  },
+  "devDependencies": {
+    "@types/node": "18.16.2",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
+    "eslint-config-next": "13.3.1"
+  },
+  "dependencies": {
+    "next": "13.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
