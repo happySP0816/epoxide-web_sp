@@ -7,6 +7,10 @@
     "packages/nuxt",
     "packages/sveltekit"
   ],
+  "engines": {
+    "node": "18.x.x",
+    "npm": "9.x.x"
+  },
   "scripts": {
     "check": "npm run check --workspaces --if-present",
     "dev:next": "npm run dev -w @epoxide/web-next",
