@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/epoxide/epoxide-web.git"
   },
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",

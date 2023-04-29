@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/epoxide/epoxide-web.git"
   },
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@types/node": "18.16.2",
     "@types/react": "18.2.0",
