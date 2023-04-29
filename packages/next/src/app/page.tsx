@@ -1,16 +1,17 @@
 import Link from 'next/link'
 import styles from './page.module.scss'
+import { HOME } from '@epoxide/web-constants'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.title}>epoxide</h1>
+      <h1 className={styles.title}>{HOME.TITLE}</h1>
       <section className={styles.links}>
-        <Link href="https://old.epoxide.se/R2AT">
-          R²AT - Radial Reliability Analysis Tool
+        <Link href={HOME.LINKS.R2AT.URL}>{HOME.LINKS.R2AT.TEXT}</Link>
+        <Link href={HOME.LINKS.TOTTES_KZ.URL}>{HOME.LINKS.TOTTES_KZ.TEXT}</Link>
+        <Link href={HOME.LINKS.KZ_REPLAY_VIEWER.URL}>
+          {HOME.LINKS.KZ_REPLAY_VIEWER.TEXT}
         </Link>
-        <Link href="https://old.epoxide.se/stats">Tottes KZ - Stats</Link>
-        <Link href="https://old.epoxide.se/replay">KZ Replay Viewer</Link>
       </section>
     </main>
   )

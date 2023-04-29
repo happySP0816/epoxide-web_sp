@@ -5,7 +5,8 @@
   "workspaces": [
     "packages/next",
     "packages/nuxt",
-    "packages/sveltekit"
+    "packages/sveltekit",
+    "packages/constants"
   ],
   "engines": {
     "node": "18.x.x",

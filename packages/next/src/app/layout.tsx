@@ -1,11 +1,12 @@
 import './globals.scss'
 import { Raleway } from 'next/font/google'
+import { META } from '@epoxide/web-constants'
 
 const raleway = Raleway({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'epoxide',
-  description: 'Library and landing page for epoxide.',
+  title: META.TITLE,
+  description: META.DESCRIPTION,
 }
 
 export default function RootLayout({
