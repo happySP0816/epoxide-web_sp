@@ -13,11 +13,13 @@
     "npm": "9.x.x"
   },
   "scripts": {
+    "build": "npm run build -w @epoxide/web-next",
     "check": "npm run check --workspaces --if-present",
     "dev:next": "npm run dev -w @epoxide/web-next",
     "dev:sveltekit": "npm run dev -w @epoxide/web-sveltekit",
     "lint": "npm run lint --workspaces --if-present",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "npm run start -w @epoxide/web-next"
   },
   "author": {
     "name": "Tomas Tannergren",
