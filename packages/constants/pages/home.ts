@@ -3,15 +3,15 @@ export const HOME = {
   LINKS: {
     R2AT: {
       TEXT: 'R²AT - Radial Reliability Analysis Tool',
-      URL: 'https://old.epoxide.se/R2AT',
+      URL: '/R2AT',
     },
     TOTTES_KZ: {
       TEXT: 'Tottes KZ - Stats',
-      URL: 'https://old.epoxide.se/stats',
+      URL: '/stats',
     },
     KZ_REPLAY_VIEWER: {
       TEXT: 'KZ Replay Viewer',
-      URL: 'https://old.epoxide.se/replay',
+      URL: '/replay',
     },
   },
 }
