@@ -53,10 +53,11 @@ jobs:
     concurrency:
       group: production
       cancel-in-progress: true
+    env:
+      DEPLOY_DIRECTORY: ${{ secrets.DEPLOY_DIRECTORY }}
     steps:
       - name: Configure SSH
         env:
-          DEPLOY_DIRECTORY: ${{ secrets.DEPLOY_DIRECTORY }}
           DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
