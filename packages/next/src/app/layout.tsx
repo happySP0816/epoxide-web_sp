@@ -6,6 +6,8 @@ import type { Metadata } from 'next'
 const raleway = Raleway({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  title: META.TITLE,
+  description: META.DESCRIPTION,
   metadataBase: new URL(META.URL),
   openGraph: {
     title: META.TITLE,
@@ -16,8 +18,14 @@ export const metadata: Metadata = {
     type: 'website',
     images: META.OG_IMAGE,
   },
-  title: META.TITLE,
-  description: META.DESCRIPTION,
+  twitter: {
+    card: 'summary_large_image',
+    title: META.TITLE,
+    description: META.DESCRIPTION,
+    images: [META.TWITTER_IMAGE],
+    creator: META.TWITTER_CREATOR,
+    creatorId: META.TWITTER_CREATOR_ID,
+  },
 }
 
 export default function RootLayout({
