@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     url: META.URL,
     locale: META.LOCALE,
     type: 'website',
+    images: META.OG_IMAGE,
   },
   title: META.TITLE,
   description: META.DESCRIPTION,

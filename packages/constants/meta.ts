@@ -4,4 +4,5 @@ export const META = {
   SITE_NAME: 'epoxide',
   URL: 'https://epoxide.se',
   LOCALE: 'en-US',
+  OG_IMAGE: '/opengraph-image.png',
 }
