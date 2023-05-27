@@ -1,6 +1,7 @@
 export const META = {
   TITLE: 'epoxide',
   DESCRIPTION: 'Library and landing page for epoxide.',
+  THEME: 'dark',
   SITE_NAME: 'epoxide',
   URL: 'https://epoxide.se',
   LOCALE: 'en-US',

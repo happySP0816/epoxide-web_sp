@@ -8,6 +8,7 @@ const raleway = Raleway({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: META.TITLE,
   description: META.DESCRIPTION,
+  themeColor: META.THEME,
   metadataBase: new URL(META.URL),
   openGraph: {
     title: META.TITLE,
