@@ -7,7 +7,7 @@ export default function NotFound() {
     <main className={styles.main}>
       <h1 className={styles.title}>{NOT_FOUND.TITLE}</h1>
       <section className={styles.links}>
-        <Link href={'/'}>{NOT_FOUND.GO_BACK}</Link>
+        <Link href="/">{NOT_FOUND.GO_BACK}</Link>
       </section>
     </main>
   )
