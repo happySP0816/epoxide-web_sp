@@ -42,3 +42,40 @@ jobs:
         run: npm ci
       - name: Run Svelte check
         run: npm run check
+  deploy-production:
+    name: Deploy to production
+    runs-on: ubuntu-latest
+    needs: [lint, svelte-check]
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: production
+      url: https://epoxide.se
+    concurrency:
+      group: production
+      cancel-in-progress: true
+    steps:
+      - name: Configure SSH
+        env:
+          DEPLOY_DIR: ${{ secrets.DEPLOY_DIR }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/deploy
+          chmod 600 ~/.ssh/deploy
+          cat >>~/.ssh/config <<END
+          Host production
+            HostName $DEPLOY_HOST
+            User $DEPLOY_USER
+            IdentityFile ~/.ssh/deploy
+            StrictHostKeyChecking no
+          END
+      - name: Pull latest
+        run: ssh production 'cd $DEPLOY_DIR && git pull'
+      - name: Install dependencies
+        run: ssh production 'cd $DEPLOY_DIR && export NVM_DIR="~/.nvm" && source ~/.nvm/nvm.sh && npm install'
+      - name: Build
+        run: ssh production 'cd $DEPLOY_DIR && export NVM_DIR="~/.nvm" && source ~/.nvm/nvm.sh && npm run build'
+      - name: Restart server
+        run: ssh production 'cd $DEPLOY_DIR && export NVM_DIR="~/.nvm" && source ~/.nvm/nvm.sh && pm2 restart npm -- start'
