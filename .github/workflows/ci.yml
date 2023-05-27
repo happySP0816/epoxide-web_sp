@@ -72,10 +72,10 @@ jobs:
             StrictHostKeyChecking no
           END
       - name: Pull latest
-        run: ssh production 'cd '"$DEPLOY_DIRECTORY"' && git pull'
+        run: ssh production "cd $DEPLOY_DIRECTORY && git pull"
       - name: Install dependencies
-        run: ssh production 'cd '"$DEPLOY_DIRECTORY"' && export NVM_DIR="~/.nvm" && source ~/.nvm/nvm.sh && npm install'
+        run: ssh production "cd $DEPLOY_DIRECTORY && export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && npm install"
       - name: Build
-        run: ssh production 'cd '"$DEPLOY_DIRECTORY"' && export NVM_DIR="~/.nvm" && source ~/.nvm/nvm.sh && npm run build'
+        run: ssh production "cd $DEPLOY_DIRECTORY && export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && npm run build"
       - name: Restart server
-        run: ssh production 'cd '"$DEPLOY_DIRECTORY"' && export NVM_DIR="~/.nvm" && source ~/.nvm/nvm.sh && pm2 restart npm -- start'
+        run: ssh production "cd $DEPLOY_DIRECTORY && export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && pm2 restart npm -- start"
