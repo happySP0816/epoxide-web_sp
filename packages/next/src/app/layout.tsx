@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 const raleway = Raleway({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(META.URL),
   openGraph: {
     title: META.TITLE,
     description: META.DESCRIPTION,
