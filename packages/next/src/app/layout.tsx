@@ -26,6 +26,16 @@ export const metadata: Metadata = {
     creator: META.TWITTER_CREATOR,
     creatorId: META.TWITTER_CREATOR_ID,
   },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      nocache: true,
+    },
+  },
 }
 
 export default function RootLayout({
