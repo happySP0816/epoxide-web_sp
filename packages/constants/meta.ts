@@ -9,4 +9,5 @@ export const META = {
   TWITTER_IMAGE: '/twitter-image.png',
   TWITTER_CREATOR: '@TLEpoxide',
   TWITTER_CREATOR_ID: '870776905',
+  GOOGLE_SITE_VERIFICATION: 'wzqG8ce2wQmwPODNX0HFf9TtNr5xSedSfF6_0nZKWMc',
 }

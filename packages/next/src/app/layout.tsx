@@ -37,6 +37,9 @@ export const metadata: Metadata = {
       nocache: true,
     },
   },
+  verification: {
+    google: META.GOOGLE_SITE_VERIFICATION,
+  },
 }
 
 export default function RootLayout({
