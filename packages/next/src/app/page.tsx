@@ -13,6 +13,7 @@ export default function Home() {
           alt={HOME.LOGO.ALT}
           width={HOME.LOGO.SIZE}
           height={HOME.LOGO.SIZE}
+          priority
         />
         <h1 className={styles.title}>{HOME.TITLE}</h1>
       </div>
