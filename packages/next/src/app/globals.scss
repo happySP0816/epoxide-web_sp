@@ -1,10 +1,16 @@
 :root {
+  /* Colors */
   --background-color: 35, 38, 40;
   --on-background-color: 232, 230, 227;
   --primary-color: 163, 229, 238;
   --on-primary-color: 0, 0, 0;
   --secondary-color: 30, 42, 97;
   --on-secondary-color: 232, 230, 227;
+
+  /* Breakpoints */
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 960px;
+  --breakpoint-lg: 1280px;
 }
 
 html,
