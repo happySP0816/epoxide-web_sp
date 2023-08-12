@@ -1,7 +1,9 @@
 @use 'src/styles/variables';
 
 .container {
-  min-height: 14rem;
+  display: flex;
+  align-items: center;
+  min-height: 16rem;
 
   .background {
     box-sizing: border-box;
