@@ -19,15 +19,15 @@
   },
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "@types/node": "^18.16.16",
-    "@types/react": "^18.2.7",
-    "@types/react-dom": "^18.2.4",
-    "eslint-config-next": "^13.4.4"
+    "@types/node": "^18.17.5",
+    "@types/react": "^18.2.20 ",
+    "@types/react-dom": "^18.2.7",
+    "eslint-config-next": "^13.4.13"
   },
   "dependencies": {
-    "next": "^13.4.4",
+    "next": "^13.4.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.62.1"
+    "sass": "^1.65.1"
   }
 }
