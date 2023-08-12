@@ -13,7 +13,6 @@
   gap: 3em;
 
   @media screen and (max-width: variables.$breakpoint-lg) {
-    margin-top: 2em;
     flex-direction: column;
     gap: 1em;
     align-items: center;
