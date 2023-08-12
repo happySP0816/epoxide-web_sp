@@ -10,8 +10,7 @@ export default function Home() {
       <TitleLogo
         src={epoxideLogo}
         alt={HOME.LOGO.ALT}
-        width={HOME.LOGO.SIZE}
-        height={HOME.LOGO.SIZE}
+        logoSize={HOME.LOGO.SIZE}
         title={HOME.TITLE}
       />
       <section className={styles.links}>
