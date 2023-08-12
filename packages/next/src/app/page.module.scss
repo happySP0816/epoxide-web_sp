@@ -19,6 +19,10 @@
   background-color: rgb(var(--primary-color));
   margin-bottom: 2rem;
 
+  img {
+    user-select: none;
+  }
+
   .title {
     font-size: 5.25em;
     font-weight: 100;
