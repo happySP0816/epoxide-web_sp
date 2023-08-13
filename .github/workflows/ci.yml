@@ -42,7 +42,7 @@ jobs:
         run: npm ci
       - name: Run Svelte check
         run: npm run check
-  test-playwright:
+  test:
     name: Playwright test
     runs-on: ubuntu-latest
     steps:
