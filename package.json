@@ -19,7 +19,8 @@
     "dev:sveltekit": "npm run dev -w @epoxide/web-sveltekit",
     "lint": "npm run lint --workspaces --if-present",
     "prepare": "husky install",
-    "start": "npm run start -w @epoxide/web-next"
+    "start": "npm run start -w @epoxide/web-next",
+    "test": "npm run test --workspaces --if-present"
   },
   "author": {
     "name": "Tomas Tannergren",
@@ -34,6 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@playwright/test": "^1.37.0",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "eslint": "^8.47.0",
