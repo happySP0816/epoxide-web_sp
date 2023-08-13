@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     siteName: META.SITE_NAME,
     url: META.URL,
     locale: META.LOCALE,
-    type: 'website',
+    type: META.TYPE,
     images: META.OG_IMAGE,
   },
   twitter: {
-    card: 'summary_large_image',
+    card: META.TWITTER_CARD,
     title: META.TITLE,
     description: META.DESCRIPTION,
     images: [META.TWITTER_IMAGE],
