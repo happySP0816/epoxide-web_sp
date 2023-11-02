@@ -19,6 +19,8 @@ jobs:
         with:
           node-version-file: 'package.json'
           cache: 'npm'
+      - name: Update npm version
+        run: npm update npm -g
       - name: Install dependencies
         run: npm ci
       - name: Run linting
@@ -38,6 +40,8 @@ jobs:
         with:
           node-version-file: 'package.json'
           cache: 'npm'
+      - name: Update npm version
+        run: npm update npm -g
       - name: Install dependencies
         run: npm ci
       - name: Run Svelte check
@@ -51,6 +55,8 @@ jobs:
         with:
           node-version-file: 'package.json'
           cache: 'npm'
+      - name: Update npm version
+        run: npm update npm -g
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright dependencies
