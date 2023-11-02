@@ -97,8 +97,8 @@ jobs:
       - name: Pull latest
         run: ssh production "cd $DEPLOY_DIRECTORY && git pull"
       - name: Install dependencies
-        run: ssh production "cd $DEPLOY_DIRECTORY && export NVM_DIR=$DEPLOY_NVM_DIRECTORY && . $NVM_DIR/nvm.sh --no-use && nvm use && npm install"
+        run: ssh production "cd $DEPLOY_DIRECTORY && . $DEPLOY_NVM_DIRECTORY/nvm.sh --no-use && nvm use && npm install"
       - name: Build
-        run: ssh production "cd $DEPLOY_DIRECTORY && export NVM_DIR=$DEPLOY_NVM_DIRECTORY && . $NVM_DIR/nvm.sh --no-use && nvm use && npm run build"
+        run: ssh production "cd $DEPLOY_DIRECTORY && . $DEPLOY_NVM_DIRECTORY/nvm.sh --no-use && nvm use && npm run build"
       - name: Restart server
-        run: ssh production "cd $DEPLOY_DIRECTORY && export NVM_DIR=$DEPLOY_NVM_DIRECTORY && . $NVM_DIR/nvm.sh --no-use && nvm use && pm2 restart npm -- start"
+        run: ssh production "cd $DEPLOY_DIRECTORY && . $DEPLOY_NVM_DIRECTORY/nvm.sh --no-use && nvm use && pm2 restart npm -- start"
