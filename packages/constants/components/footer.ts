@@ -7,7 +7,7 @@ export const FOOTER = {
   SOCIAL_MEDIA_LINKS: [
     {
       ICON: 'linkedin',
-      URL: 'https://linkedin.com/in/epoxide',
+      URL: 'https://www.linkedin.com/in/epoxide',
     },
     {
       ICON: 'github',
