@@ -1,7 +1,8 @@
 export const META = {
   TITLE: 'epoxide',
   DESCRIPTION: 'Library and landing page for epoxide.',
-  THEME: 'dark',
+  COLOR_SCHEME: 'dark' as const,
+  THEME_COLOR: 'rgb(35, 38, 40)',
   SITE_NAME: 'epoxide',
   URL: 'https://epoxide.se',
   LOCALE: 'en-US',

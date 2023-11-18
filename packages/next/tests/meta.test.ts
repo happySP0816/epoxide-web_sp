@@ -16,11 +16,18 @@ test('has description', async ({ page }) => {
   ).toBe(META.DESCRIPTION)
 })
 
-test('has theme', async ({ page }) => {
+test('has color scheme', async ({ page }) => {
+  await page.goto('/')
+  await expect(
+    await page.locator('meta[name="color-scheme"]').getAttribute('content'),
+  ).toBe(META.COLOR_SCHEME)
+})
+
+test('has theme color', async ({ page }) => {
   await page.goto('/')
   await expect(
     await page.locator('meta[name="theme-color"]').getAttribute('content'),
-  ).toBe(META.THEME)
+  ).toBe(META.THEME_COLOR)
 })
 
 test('has opengraph title', async ({ page }) => {

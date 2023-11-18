@@ -1,14 +1,13 @@
 import 'src/styles/globals.scss'
 import { Raleway } from 'next/font/google'
 import { META } from '@epoxide/web-constants'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 
 const raleway = Raleway({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: META.TITLE,
   description: META.DESCRIPTION,
-  themeColor: META.THEME,
   metadataBase: new URL(META.URL),
   openGraph: {
     title: META.TITLE,
@@ -40,6 +39,11 @@ export const metadata: Metadata = {
   verification: {
     google: META.GOOGLE_SITE_VERIFICATION,
   },
+}
+
+export const viewport: Viewport = {
+  colorScheme: META.COLOR_SCHEME,
+  themeColor: META.THEME_COLOR,
 }
 
 export default function RootLayout({
