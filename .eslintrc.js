@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/stylistic',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -15,6 +16,7 @@ module.exports = {
     'prettier/prettier': 'warn',
     'prefer-template': 'error',
     'no-useless-concat': 'error',
+    quotes: ['error', 'single', { avoidEscape: true }],
     '@typescript-eslint/consistent-type-imports': 'error',
   },
 }
