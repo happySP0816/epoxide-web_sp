@@ -1,3 +1,3 @@
-# epoxide-web using Next 13
+# epoxide-web using Next 14
 
-This workspace is built using Next 13 and is the one deployed on [epoxide.se](https://epoxide.se).
+This workspace is built using Next 14 and is the one deployed on [epoxide.se](https://epoxide.se).

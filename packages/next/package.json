@@ -1,7 +1,7 @@
 {
   "name": "@epoxide/web-next",
   "version": "1.0.0",
-  "description": "epoxide.se web using Next 13",
+  "description": "epoxide.se web using Next 14",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
