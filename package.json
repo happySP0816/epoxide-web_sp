@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "epoxide.se web monorepo",
   "workspaces": [
+    "packages/assets",
     "packages/constants",
     "packages/next",
     "packages/nuxt",
