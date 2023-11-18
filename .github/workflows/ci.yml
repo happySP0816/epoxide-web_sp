@@ -63,10 +63,28 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npm run test
+  changes-since-last-deploy:
+    name: Compare changes since last deploy
+    runs-on: ubuntu-latest
+    needs: [lint, svelte-check, test]
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github
+      url: ${{steps.changes.outputs.url}}
+    permissions: read-all
+    steps:
+      - uses: actions/checkout@v4
+      - name: Changes since last deploy
+        id: changes
+        run: |
+          export SHA=$(gh run list --status success --json headSha,status,displayTitle | jq -r '.[0].headSha')
+          echo "url=https://github.com/${{ github.repository }}/compare/$SHA...${{ github.sha }}" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
   deploy-production:
     name: Deploy to production
     runs-on: ubuntu-latest
-    needs: [lint, svelte-check, test]
+    needs: [changes-since-last-deploy]
     if: github.ref == 'refs/heads/main'
     environment:
       name: production
