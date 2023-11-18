@@ -6,7 +6,7 @@ const config: PlaywrightTestConfig = {
     port: 4173,
     reuseExistingServer: !process.env.CI,
   },
-  testDir: 'tests',
+  testDir: '../tests/tests',
   retries: 2,
 }
 
