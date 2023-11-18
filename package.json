@@ -9,7 +9,7 @@
     "packages/constants"
   ],
   "engines": {
-    "node": "18.x.x",
+    "node": "20.x.x",
     "npm": "10.x.x"
   },
   "scripts": {
