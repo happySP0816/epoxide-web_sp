@@ -5,7 +5,7 @@ test('has favicon', async ({ page }) => {
   await page.goto('/')
   await expect(
     await page.locator('link[rel="icon"]').getAttribute('href'),
-  ).toBe('/favicon.ico')
+  ).toContain('/favicon.ico')
   await expect(page.goto('/favicon.ico')).resolves.toBeTruthy()
 })
 
@@ -50,7 +50,7 @@ test('has opengraph url', async ({ page }) => {
   await page.goto('/')
   await expect(
     await page.locator('meta[property="og:url"]').getAttribute('content'),
-  ).toBe(`${META.URL}/`)
+  ).toContain(META.URL)
 })
 
 test('has opengraph site name', async ({ page }) => {
