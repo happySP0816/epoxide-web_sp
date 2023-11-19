@@ -1,4 +1,4 @@
-@use 'src/styles/variables';
+@use '@epoxide/web-assets/css/breakpoints';
 
 .footer {
   display: flex;
@@ -13,7 +13,7 @@
   background-color: rgb(var(--surface-color));
   color: rgb(var(--on-surface-color));
 
-  @media screen and (max-width: variables.$breakpoint-sm) {
+  @media screen and (max-width: breakpoints.$breakpoint-sm) {
     justify-content: center;
   }
 
@@ -28,7 +28,7 @@
       filter: grayscale(100%);
     }
 
-    @media screen and (max-width: variables.$breakpoint-sm) {
+    @media screen and (max-width: breakpoints.$breakpoint-sm) {
       display: none;
     }
   }

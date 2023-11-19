@@ -1,4 +1,4 @@
-@use 'src/styles/variables';
+@use '@epoxide/web-assets/css/breakpoints';
 
 .main {
   display: flex;
@@ -12,7 +12,7 @@
   display: flex;
   gap: 3em;
 
-  @media screen and (max-width: variables.$breakpoint-lg) {
+  @media screen and (max-width: breakpoints.$breakpoint-lg) {
     flex-direction: column;
     gap: 1em;
     align-items: center;
