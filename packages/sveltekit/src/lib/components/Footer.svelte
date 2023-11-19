@@ -1,0 +1,68 @@
+<script lang="ts">
+  import { FOOTER } from '@epoxide/web-constants'
+  import IconButton from './IconButton.svelte'
+
+  export let src: string
+</script>
+
+<footer class="footer">
+  <div class="title-logo">
+    <img {src} alt={FOOTER.LOGO.ALT} />
+    <span>{FOOTER.TITLE}</span>
+  </div>
+  <section class="social-media-links">
+    {#each FOOTER.SOCIAL_MEDIA_LINKS as link (link.ICON)}
+      <IconButton
+        href={link.URL}
+        target="_blank"
+        icon={link.ICON}
+        iconLibrary="brands"
+        size="xl"
+      />
+    {/each}
+  </section>
+</footer>
+
+<style lang="scss">
+  @use '@epoxide/web-assets/css/breakpoints';
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    --horizontal-padding: 2rem;
+    --vertical-padding: 0.5rem;
+    width: calc(100% - var(--horizontal-padding) * 2);
+    height: calc(var(--footer-height) - var(--vertical-padding) * 2);
+    padding: var(--vertical-padding) var(--horizontal-padding);
+    background-color: rgb(var(--surface-color));
+    color: rgb(var(--on-surface-color));
+
+    @media screen and (max-width: breakpoints.$breakpoint-sm) {
+      justify-content: center;
+    }
+
+    .title-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5em;
+      font-weight: 100;
+
+      img {
+        filter: grayscale(100%);
+      }
+
+      @media screen and (max-width: breakpoints.$breakpoint-sm) {
+        display: none;
+      }
+    }
+
+    .social-media-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+</style>

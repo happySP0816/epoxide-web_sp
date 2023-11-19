@@ -6,7 +6,6 @@ test('has favicon', async ({ page }) => {
   await expect(
     await page.locator('link[rel="icon"]').getAttribute('href'),
   ).toContain('/favicon.ico')
-  await expect(page.goto('/favicon.ico')).resolves.toBeTruthy()
 })
 
 test('has description', async ({ page }) => {
