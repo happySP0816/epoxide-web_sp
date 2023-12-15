@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from './page.module.scss'
 import { HOME } from '@epoxide/web-constants'
 import { TitleLogo } from '@/components/TitleLogo'
-import epoxideLogo from 'public/epoxide-logo-circle.svg'
+import epoxideLogo from '../../public/epoxide-logo-circle.svg'
 import { Footer } from '@/components/Footer'
 
 export default function Home() {

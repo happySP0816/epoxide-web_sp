@@ -1,4 +1,4 @@
-import 'src/styles/globals.scss'
+import '../styles/globals.scss'
 import { Raleway } from 'next/font/google'
 import { META } from '@epoxide/web-constants'
 import type { Metadata, Viewport } from 'next'
