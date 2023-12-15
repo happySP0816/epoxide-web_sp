@@ -113,7 +113,7 @@ jobs:
             StrictHostKeyChecking no
           END
       - name: Pull latest
-        run: ssh production "cd $DEPLOY_DIRECTORY && git pull"
+        run: ssh production "cd $DEPLOY_DIRECTORY && git checkout . && git pull"
       - name: Install dependencies
         run: ssh production "cd $DEPLOY_DIRECTORY && . $DEPLOY_NVM_DIRECTORY/nvm.sh --no-use && nvm use && npm install"
       - name: Build
