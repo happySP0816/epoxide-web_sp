@@ -62,7 +62,7 @@
     .social-media-links {
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 1em;
     }
   }
 </style>

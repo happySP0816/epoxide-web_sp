@@ -33,9 +33,15 @@
     background-color: transparent;
     height: 2.5em;
     width: 2.5em;
+    padding: 0.25em;
     border: none;
+    border-radius: 50%;
     appearance: none;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover {
+      background: rgba(var(--on-surface-color), 0.12);
+    }
   }
 </style>

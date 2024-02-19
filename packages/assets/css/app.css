@@ -11,6 +11,7 @@
   --on-primary-color: 0, 0, 0;
   --secondary-color: 30, 42, 97;
   --on-secondary-color: 232, 230, 227;
+  --on-surface-hover-color: 242, 240, 237;
 
   --footer-height: 4rem;
 }
