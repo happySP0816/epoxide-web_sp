@@ -39,6 +39,7 @@
     appearance: none;
     text-decoration: none;
     cursor: pointer;
+    transition: background-color 250ms ease-in-out;
 
     &:hover {
       background: rgba(var(--on-surface-color), 0.12);

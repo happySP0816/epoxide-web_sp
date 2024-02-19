@@ -12,6 +12,7 @@
   appearance: none;
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 125ms ease-in-out;
 
   &:hover {
     background: rgba(var(--on-surface-color), 0.12);
