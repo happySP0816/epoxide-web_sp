@@ -15,7 +15,7 @@ export const FOOTER = {
     },
     {
       ICON: 'discord',
-      URL: 'https://discord.com/users/epoxide',
+      URL: 'https://discord.com/users/227129806418870272',
     },
   ],
 }
