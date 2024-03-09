@@ -63,11 +63,39 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npm run test
+  check-deploy:
+    name: Check if deploy is needed
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    outputs:
+      deployNext: ${{ steps.checkCommitMessagesForNextChanges.outputs.deployNext }}
+    permissions: read-all
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Get last workflow run SHA
+        id: lastWorkflowRun
+        run: |
+          export SHA=$(gh run list --json headSha | jq -r '.[1].headSha')
+          echo "lastWorkflowRunSha=$SHA" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Check commit messages for Next changes
+        id: checkCommitMessagesForNextChanges
+        run: |
+          if git log --pretty=format:"%s" ${{ steps.lastWorkflowRun.outputs.lastWorkflowRunSha }}..HEAD | grep -q -E '\(next\):|^feat:|^fix:|^ci:|^refactor:|^chore:'; then
+            echo "Commit messages since last deploy contain a repo wide or Next change"
+            echo "deployNext=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Commit messages since last deploy do not contain a repo wide or Next change"
+            echo "deployNext=false" >> "$GITHUB_OUTPUT"
+          fi
   changes-since-last-deploy:
     name: Compare changes since last deploy
     runs-on: ubuntu-latest
     needs: [lint, svelte-check, test]
-    if: github.ref == 'refs/heads/main'
+    if: ${{ needs.check-deploy.outputs.deployNext == 'true' }}
     environment:
       name: github
       url: ${{steps.changes.outputs.url}}
