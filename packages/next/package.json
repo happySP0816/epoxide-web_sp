@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "playwright test"
+    "test": "playwright test --quiet"
   },
   "author": {
     "name": "Tomas Tannergren",
