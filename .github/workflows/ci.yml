@@ -94,7 +94,7 @@ jobs:
   changes-since-last-deploy:
     name: Compare changes since last deploy
     runs-on: ubuntu-latest
-    needs: [lint, svelte-check, test]
+    needs: [lint, svelte-check, test, check-deploy]
     if: ${{ needs.check-deploy.outputs.deployNext == 'true' }}
     environment:
       name: github
