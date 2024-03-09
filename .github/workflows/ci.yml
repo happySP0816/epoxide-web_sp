@@ -77,7 +77,7 @@ jobs:
       - name: Changes since last deploy
         id: changes
         run: |
-          export SHA=$(gh run list --status success --json headSha,status,displayTitle | jq -r '.[0].headSha')
+          export SHA=$(gh run list --json databaseId | jq -r ".[] | .databaseId" | while read -r run_id; do gh run view $run_id --json jobs,headSha | jq -r '. | select(.jobs[] | .name == "Deploy to production" and .status == "completed" and .conclusion == "success") | .headSha' | grep . && break; done | head -n 1)
           echo "url=https://github.com/${{ github.repository }}/compare/$SHA...${{ github.sha }}" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ github.token }}
