@@ -1,13 +1,5 @@
 @use '@epoxide/web-assets/css/breakpoints';
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - var(--footer-height));
-}
-
 .links {
   display: flex;
   gap: 3em;

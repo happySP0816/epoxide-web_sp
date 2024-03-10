@@ -1,7 +1,10 @@
 import '../styles/globals.scss'
+import styles from './layout.module.scss'
 import { Raleway } from 'next/font/google'
 import { META } from '@epoxide/web-constants'
 import type { Metadata, Viewport } from 'next'
+import { Footer } from '@/components/Footer'
+import epoxideLogo from '../../public/epoxide-logo-circle.svg'
 
 const raleway = Raleway({ subsets: ['latin'] })
 
@@ -53,7 +56,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
+      <body className={raleway.className}>
+        <main className={styles.main}>{children}</main>
+        <Footer src={epoxideLogo} />
+      </body>
     </html>
   )
 }
