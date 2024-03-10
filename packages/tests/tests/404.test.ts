@@ -11,3 +11,8 @@ test('has link to home', async ({ page }) => {
   await page.getByText(NOT_FOUND.GO_BACK).click()
   await expect(page).toHaveURL('/')
 })
+
+test('uses layout', async ({ page }) => {
+  await page.goto('/non-existing-route')
+  await expect(page.locator('footer')).toBeTruthy()
+})
