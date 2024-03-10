@@ -10,8 +10,8 @@ This is a monorepo for the web located at [epoxide.se](https://epoxide.se). It i
 |--------------------|-------------------|----------------------|------------|
 | Analog             |                   | Angular              | Planned    |
 | City               |                   | Qwik                 | Planned    |
-| HTMX               |                   |                      | Planned    |
-| Next               | 14                | React                | Deployed 🚀 |
+| HTMX                                              |                   |                      | Planned    |
+| <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/docs/next-js.svg?raw=true" alt="Next" height="64px" /> Next | 14                | React                | Deployed 🚀 |
 | Nuxt               | 3                 | Vue                  | Complete ✅ |
 | Start              |                   | Solid                | Planned    |
 | SvelteKit          | 2                 | Svelte               | Complete ✅ |
