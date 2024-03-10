@@ -21,6 +21,15 @@ defineProps<Props>()
 <style scoped lang="scss">
 @use '@epoxide/web-assets/css/breakpoints';
 
+.title {
+  font-size: 64px;
+  text-align: center;
+
+  @media screen and (max-width: breakpoints.$breakpoint-lg) {
+    font-size: 48px;
+  }
+}
+
 .links {
   display: flex;
   gap: 3em;
