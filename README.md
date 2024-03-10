@@ -93,7 +93,7 @@ This is a monorepo for the web located at [epoxide.se](https://epoxide.se). It i
       </td>
       <td>2</td>
       <td>
-        <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/svelte.pngg?raw=true" alt="Svelte" height="20px" />
+        <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/svelte.png?raw=true" alt="Svelte" height="20px" />
         <span>Svelte</span>
       </td>
       <td>Complete ✅</td>
