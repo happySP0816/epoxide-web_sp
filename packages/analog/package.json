@@ -1,0 +1,22 @@
+{
+  "name": "@epoxide/web-analog",
+  "version": "1.0.0",
+  "description": "epoxide.se web using Analog",
+  "type": "module",
+  "scripts": {
+    "dev": "ng serve",
+    "build": "ng build"
+  },
+  "devDependencies": {
+    "@analogjs/platform": "^1.1.2",
+    "@analogjs/vite-plugin-angular": "^1.1.2",
+    "@angular/cli": "^17.3.3"
+  },
+  "dependencies": {
+    "@analogjs/router": "^1.1.2",
+    "@angular/common": "^17.3.3",
+    "@angular/core": "^17.3.3",
+    "@angular/platform-browser": "^17.3.3",
+    "@angular/platform-server": "^17.3.3"
+  }
+}

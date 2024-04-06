@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "epoxide.se web monorepo",
   "workspaces": [
+    "packages/analog",
     "packages/assets",
     "packages/constants",
     "packages/next",
@@ -17,6 +18,7 @@
   "scripts": {
     "build": "npm run build -w @epoxide/web-next",
     "check": "npm run check --workspaces --if-present",
+    "dev:analog": "npm run dev -w @epoxide/web-analog",
     "dev:next": "npm run dev -w @epoxide/web-next",
     "dev:nuxt": "npm run dev -w @epoxide/web-nuxt",
     "dev:sveltekit": "npm run dev -w @epoxide/web-sveltekit",
@@ -47,7 +49,9 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.4"
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.4",
+    "vite": "^5.2.8"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",

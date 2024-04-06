@@ -24,7 +24,7 @@ This is a monorepo for the web located at [epoxide.se](https://epoxide.se). It i
         <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/angular.svg?raw=true" alt="Angular" height="20px" />
         <span>Angular</span>
       </td>
-      <td>Planned</td>
+      <td>In progress</td>
     </tr>
     <tr>
       <td>
