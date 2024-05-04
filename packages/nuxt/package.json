@@ -23,11 +23,11 @@
   },
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "eslint-plugin-vue": "^9.24.0"
+    "eslint-plugin-vue": "^9.25.0"
   },
   "dependencies": {
     "nuxt": "^3.11.2",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue": "^3.4.26",
+    "vue-router": "^4.3.2"
   }
 }
