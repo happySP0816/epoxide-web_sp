@@ -4,3 +4,4 @@ node_modules
 !.vscode/extensions.json
 !.vscode/**/extensions.json
 test-results
+.nx
