@@ -30,7 +30,7 @@ This is a monorepo for the web located at [epoxide.se](https://epoxide.se). It i
       <td>
         <picture>
           <source
-            srcset="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/astro-light?raw=true"
+            srcset="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/astro-light.svg?raw=true"
             media="(prefers-color-scheme: dark)"
           />
           <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/astro.svg?raw=true" alt="Astro" height="20px" />
