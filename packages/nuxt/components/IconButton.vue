@@ -6,6 +6,7 @@ export interface Props {
   icon: string
   iconLibrary: 'brands' | 'solid'
   size?: '2xs' | 'xs' | 'sm' | 'lg' | 'xl' | '2xl'
+  ariaLabel?: string
 }
 
 withDefaults(defineProps<Props>(), {
@@ -13,11 +14,18 @@ withDefaults(defineProps<Props>(), {
   target: undefined,
   type: undefined,
   size: undefined,
+  ariaLabel: undefined,
 })
 </script>
 
 <template>
-  <a v-if="href" :href="href" :target="target" class="button">
+  <a
+    v-if="href"
+    :href="href"
+    :target="target"
+    :aria-label="ariaLabel"
+    class="button"
+  >
     <Icon :icon="icon" :icon-library="iconLibrary" :size="size" />
   </a>
   <button v-else :type="type" class="button">

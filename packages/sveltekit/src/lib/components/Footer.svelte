@@ -18,6 +18,7 @@
         icon={link.ICON}
         iconLibrary="brands"
         size="xl"
+        ariaLabel={link.ARIA_LABEL}
       />
     {/each}
   </section>

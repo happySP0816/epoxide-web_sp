@@ -38,3 +38,19 @@ test('social media buttons links correctly', async ({ context, page }) => {
     await expect(newPage.url()).toBe(FOOTER.SOCIAL_MEDIA_LINKS[index].URL)
   }
 })
+
+test('social media button links have correct aria-label', async ({ page }) => {
+  await page.goto('/')
+
+  const socialMediaLinks = await page
+    .locator('footer')
+    .locator('section')
+    .locator('a')
+    .all()
+
+  for (let index = 0; index < socialMediaLinks.length; index++) {
+    await expect(await socialMediaLinks[index].getAttribute('aria-label')).toBe(
+      FOOTER.SOCIAL_MEDIA_LINKS[index].ARIA_LABEL,
+    )
+  }
+})

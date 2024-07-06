@@ -12,14 +12,15 @@
   export let iconLibrary: 'brands' | 'solid'
   export let size: '2xs' | 'xs' | 'sm' | 'lg' | 'xl' | '2xl' | undefined =
     undefined
+  export let ariaLabel: string | undefined = undefined
 </script>
 
 {#if href}
-  <a {href} target={target ?? undefined} class="button">
+  <a {href} {target} aria-label={ariaLabel} class="button">
     <Icon {icon} {iconLibrary} {size} />
   </a>
 {:else}
-  <button type={type ?? undefined} class="button">
+  <button {type} class="button">
     <Icon {icon} {iconLibrary} {size} />
   </button>
 {/if}

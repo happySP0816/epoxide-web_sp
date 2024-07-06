@@ -24,6 +24,7 @@ defineProps({
         :icon="link.ICON"
         icon-library="brands"
         size="xl"
+        :aria-label="link.ARIA_LABEL"
       />
     </section>
   </footer>

@@ -30,6 +30,7 @@ export function Footer({ src }: FooterProps) {
               key={link.ICON}
               iconLibrary="brands"
               size="xl"
+              ariaLabel={link.ARIA_LABEL}
             />
           )
         })}
