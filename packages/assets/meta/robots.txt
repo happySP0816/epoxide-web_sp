@@ -1,0 +1,5 @@
+User-Agent: *
+User-Agent: AdsBot-Google
+Allow: /
+
+Sitemap: https://epoxide.se/sitemap.xml
