@@ -129,3 +129,8 @@ test('has twitter image', async ({ page }) => {
   await expect(twitterImage).toBe(`${META.URL}${META.TWITTER_IMAGE}`)
   await expect(page.goto(twitterImage as string)).resolves.toBeTruthy()
 })
+
+test('has lang set to en', async ({ page }) => {
+  await page.goto('/')
+  await expect(await page.locator('html').getAttribute('lang')).toBe('en')
+})
