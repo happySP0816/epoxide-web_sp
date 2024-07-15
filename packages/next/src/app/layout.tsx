@@ -4,7 +4,7 @@ import { Raleway } from 'next/font/google'
 import { META } from '@epoxide/web-constants'
 import type { Metadata, Viewport } from 'next'
 import { Footer } from '@/components/Footer'
-import epoxideLogo from '../../public/epoxide-logo-circle.svg'
+import epoxideLogo from '../../public/images/epoxide-logo-circle.svg'
 
 const raleway = Raleway({ subsets: ['latin'] })
 
