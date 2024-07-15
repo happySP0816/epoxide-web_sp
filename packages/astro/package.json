@@ -1,0 +1,36 @@
+{
+  "name": "@epoxide/web-astro",
+  "version": "1.0.0",
+  "description": "epoxide.se web using Astro",
+  "type": "module",
+  "author": {
+    "name": "Tomas Tannergren",
+    "email": "epoxide@epoxide.se",
+    "url": "https://epoxide.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epoxide/epoxide-web.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint .",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "eslint-plugin-astro": "^1.2.3",
+    "prettier-plugin-astro": "^0.14.0"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.8.1",
+    "@astrojs/react": "^3.6.0",
+    "astro": "^4.11.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

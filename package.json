@@ -4,6 +4,7 @@
   "description": "epoxide.se web monorepo",
   "workspaces": [
     "packages/assets",
+    "packages/astro",
     "packages/constants",
     "packages/next",
     "packages/nuxt",
@@ -17,6 +18,7 @@
   "scripts": {
     "build": "npm run build -w @epoxide/web-next",
     "check": "npm run check --workspaces --if-present",
+    "dev:astro": "npm run dev -w @epoxide/web-astro",
     "dev:next": "npm run dev -w @epoxide/web-next",
     "dev:nuxt": "npm run dev -w @epoxide/web-nuxt",
     "dev:sveltekit": "npm run dev -w @epoxide/web-sveltekit",
