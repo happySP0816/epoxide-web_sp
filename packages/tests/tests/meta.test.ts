@@ -134,3 +134,10 @@ test('has lang set to en', async ({ page }) => {
   await page.goto('/')
   await expect(await page.locator('html').getAttribute('lang')).toBe('en')
 })
+
+test('has charset set utf-8', async ({ page }) => {
+  await page.goto('/')
+  await expect(
+    await page.locator('meta[charset]').getAttribute('charset'),
+  ).toBe('utf-8')
+})
