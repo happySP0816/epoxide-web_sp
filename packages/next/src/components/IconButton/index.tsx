@@ -1,5 +1,4 @@
-import type { IconProps } from '@/components/Icon'
-import { Icon } from '@/components/Icon'
+import { Icon, type IconProps } from '../Icon'
 import styles from './styles.module.scss'
 
 interface IconButtonProps extends IconProps {
