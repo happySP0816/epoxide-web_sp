@@ -37,12 +37,21 @@ This is a monorepo for the web located at [epoxide.se](https://epoxide.se). It i
         </picture>
         <span>Astro</span>
       </td>
-      <td></td>
+      <td>4</td>
       <td>
+        <picture>
+          <source
+            srcset="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/astro-light.svg?raw=true"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/astro.svg?raw=true" alt="Astro" height="20px" />
+        </picture>
+        <span>Astro</span>
+        &
         <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/react.svg?raw=true" alt="React" height="20px" />
         <span>React</span>
       </td>
-      <td>Planned</td>
+      <td>Complete ✅</td>
     </tr>
     <tr>
       <td>
