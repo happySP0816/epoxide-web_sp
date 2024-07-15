@@ -10,7 +10,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "playwright test --quiet"
+    "test": "playwright test"
   },
   "author": {
     "name": "Tomas Tannergren",
