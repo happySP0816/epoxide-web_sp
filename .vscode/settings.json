@@ -1,4 +1,4 @@
 {
-  "eslint.validate": ["javascript",  "svelte", "vue"],
+  "eslint.validate": ["javascript", "astro", "svelte", "vue"],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
