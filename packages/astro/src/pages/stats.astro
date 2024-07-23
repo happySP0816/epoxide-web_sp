@@ -1,3 +1,5 @@
 ---
-return Astro.redirect('https://old.epoxide.se/stats')
+import { REDIRECTS } from '@epoxide/web-constants'
+
+return Astro.redirect(REDIRECTS.TOTTES_KZ.REDIRECT_URL)
 ---
