@@ -1,5 +1,6 @@
+import { REDIRECTS } from '@epoxide/web-constants'
 import { redirect } from '@solidjs/router'
 
 export function GET() {
-  return redirect('https://old.epoxide.se/stats')
+  return redirect(REDIRECTS.TOTTES_KZ.REDIRECT_URL)
 }
