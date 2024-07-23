@@ -73,6 +73,7 @@ test('has opengraph image', async ({ page }) => {
     .getAttribute('content')
   await expect(ogImage).toBe(`${META.URL}${META.OG_IMAGE}`)
   await expect(page.goto(ogImage as string)).resolves.toBeTruthy()
+  await expect(page.url()).toBe(ogImage)
 })
 
 test('has opengraph type', async ({ page }) => {
@@ -128,6 +129,7 @@ test('has twitter image', async ({ page }) => {
     .getAttribute('content')
   await expect(twitterImage).toBe(`${META.URL}${META.TWITTER_IMAGE}`)
   await expect(page.goto(twitterImage as string)).resolves.toBeTruthy()
+  await expect(page.url()).toBe(twitterImage)
 })
 
 test('has lang set to en', async ({ page }) => {
