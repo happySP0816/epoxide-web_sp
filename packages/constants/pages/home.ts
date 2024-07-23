@@ -1,4 +1,4 @@
-const OLD_SITE = 'https://old.epoxide.se'
+import { OLD_SITE } from '../oldSite'
 
 export const HOME = {
   TITLE: 'epoxide',
@@ -20,4 +20,4 @@ export const HOME = {
       URL: `${OLD_SITE}/replay`,
     },
   },
-}
+} as const
