@@ -106,7 +106,7 @@ This is a monorepo for the web located at [epoxide.se](https://epoxide.se). It i
         <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/start.svg?raw=true" alt="Start" height="20px" />
         <span>Start</span>
       </td>
-      <td></td>
+      <td>1</td>
       <td>
         <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/solid.svg?raw=true" alt="Solid" height="20px" />
         <span>Solid</span>
