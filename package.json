@@ -8,6 +8,7 @@
     "packages/constants",
     "packages/next",
     "packages/nuxt",
+    "packages/solid-start",
     "packages/sveltekit",
     "packages/tests"
   ],
@@ -21,6 +22,7 @@
     "dev:astro": "npm run dev -w @epoxide/web-astro",
     "dev:next": "npm run dev -w @epoxide/web-next",
     "dev:nuxt": "npm run dev -w @epoxide/web-nuxt",
+    "dev:solid-start": "npm run dev -w @epoxide/web-solid-start",
     "dev:sveltekit": "npm run dev -w @epoxide/web-sveltekit",
     "lint": "npm run lint --workspaces --if-present",
     "prepare": "husky",
@@ -56,5 +58,6 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }

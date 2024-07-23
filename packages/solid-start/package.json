@@ -1,0 +1,34 @@
+{
+  "name": "@epoxide/web-solid-start",
+  "version": "1.0.0",
+  "description": "epoxide.se web using SolidStart",
+  "type": "module",
+  "author": {
+    "name": "Tomas Tannergren",
+    "email": "epoxide@epoxide.se",
+    "url": "https://epoxide.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epoxide/epoxide-web.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "version": "vinxi version",
+    "lint": "eslint .",
+    "test": "playwright test --quiet"
+  },
+  "devDependencies": {
+    "eslint-plugin-solid": "^0.14.1"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.14.1",
+    "@solidjs/start": "^1.0.6",
+    "solid-js": "^1.8.18",
+    "vinxi": "^0.4.1"
+  }
+}

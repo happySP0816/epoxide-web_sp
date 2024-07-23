@@ -111,7 +111,7 @@ This is a monorepo for the web located at [epoxide.se](https://epoxide.se). It i
         <img src="https://github.com/Epoxide/epoxide-web/blob/main/packages/assets/images/docs/solid.svg?raw=true" alt="Solid" height="20px" />
         <span>Solid</span>
       </td>
-      <td>Planned</td>
+      <td>Complete ✅</td>
     </tr>
     <tr>
       <td>
