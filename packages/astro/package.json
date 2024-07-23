@@ -25,12 +25,12 @@
   },
   "devDependencies": {
     "eslint-plugin-astro": "^1.2.3",
-    "prettier-plugin-astro": "^0.14.0"
+    "prettier-plugin-astro": "^0.14.1"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.1",
+    "@astrojs/check": "^0.8.2",
     "@astrojs/react": "^3.6.0",
-    "astro": "^4.11.5",
+    "astro": "^4.12.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
