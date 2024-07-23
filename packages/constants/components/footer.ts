@@ -21,4 +21,4 @@ export const FOOTER = {
       ARIA_LABEL: 'Epoxide on Discord',
     },
   ],
-}
+} as const
