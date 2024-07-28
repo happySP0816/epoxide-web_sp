@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['../../.eslintrc.js', 'plugin:svelte/recommended'],
+  extends: ['../../.eslintrc.cjs', 'plugin:svelte/recommended'],
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020,

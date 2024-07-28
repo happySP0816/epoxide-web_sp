@@ -1,13 +1,9 @@
-import type { PlaywrightTestConfig } from '@playwright/test'
+import config from '../../playwright.config'
 
-const config: PlaywrightTestConfig = {
-  webServer: {
-    command: 'npm run build && export PORT=4174 && npm run preview',
-    port: 4174,
-    reuseExistingServer: !process.env.CI,
-  },
-  testDir: '../tests/tests',
-  retries: 2,
+config.webServer = {
+  command: 'npm run build && export PORT=4173 && npm run preview',
+  port: 4173,
+  reuseExistingServer: !process.env.CI,
 }
 
 export default config

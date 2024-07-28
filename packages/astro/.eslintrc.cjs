@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['../../.eslintrc.js', 'plugin:astro/recommended'],
+  extends: ['../../.eslintrc.cjs', 'plugin:astro/recommended'],
   overrides: [
     {
       files: ['*.astro'],

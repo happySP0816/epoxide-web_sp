@@ -12,6 +12,7 @@
     "packages/sveltekit",
     "packages/tests"
   ],
+  "type": "module",
   "engines": {
     "node": "20.x.x",
     "npm": "10.x.x"
@@ -27,7 +28,8 @@
     "lint": "npm run lint --workspaces --if-present",
     "prepare": "husky",
     "start": "npm run start -w @epoxide/web-next",
-    "test": "npm run test --workspaces --if-present"
+    "test": "npm run test --workspaces --if-present",
+    "update-snapshots": "npm run update-snapshots -w @epoxide/web-next"
   },
   "author": {
     "name": "Tomas Tannergren",

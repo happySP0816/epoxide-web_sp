@@ -22,3 +22,10 @@ test('has section with links', async ({ page }) => {
   await page.goto('/')
   await expect(page.locator('section').locator('a')).toBeTruthy()
 })
+
+test('matches snapshot', async ({ page }) => {
+  await page.goto('/')
+  await expect(page).toHaveScreenshot('../snapshots/home.test.ts.png', {
+    maxDiffPixelRatio: 0.1,
+  })
+})

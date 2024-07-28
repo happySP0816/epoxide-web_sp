@@ -16,3 +16,10 @@ test('uses layout', async ({ page }) => {
   await page.goto('/non-existing-route')
   await expect(page.locator('footer')).toBeTruthy()
 })
+
+test('matches snapshot', async ({ page }) => {
+  await page.goto('/non-existing-route')
+  await expect(page).toHaveScreenshot('../snapshots/404.test.ts.png', {
+    maxDiffPixelRatio: 0.1,
+  })
+})
