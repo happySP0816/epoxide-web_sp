@@ -17,9 +17,23 @@ test('uses layout', async ({ page }) => {
   await expect(page.locator('footer')).toBeTruthy()
 })
 
-test('matches snapshot', async ({ page }) => {
+test('matches desktop snapshot', async ({ page }) => {
   await page.goto('/non-existing-route')
-  await expect(page).toHaveScreenshot('../snapshots/404.test.ts.png', {
-    maxDiffPixelRatio: 0.1,
-  })
+  await expect(page).toHaveScreenshot(
+    '../snapshots/404.test.ts.matches-desktop-snapshot.png',
+    {
+      maxDiffPixelRatio: 0.1,
+    },
+  )
+})
+
+test('matches mobile snapshot', async ({ page }) => {
+  await page.goto('/non-existing-route')
+  await page.setViewportSize({ width: 393, height: 852 })
+  await expect(page).toHaveScreenshot(
+    '../snapshots/404.test.ts.matches-mobile-snapshot.png',
+    {
+      maxDiffPixelRatio: 0.1,
+    },
+  )
 })

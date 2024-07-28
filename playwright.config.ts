@@ -7,7 +7,7 @@ const config: PlaywrightTestConfig = {
     reuseExistingServer: !process.env.CI,
   },
   testDir: '../tests/tests',
-  snapshotPathTemplate: '../tests/snapshots/{testFileName}{ext}',
+  snapshotPathTemplate: '../tests/snapshots/{testFileName}.{testName}{ext}',
   retries: 2,
 }
 
