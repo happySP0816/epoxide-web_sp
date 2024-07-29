@@ -1,11 +1,14 @@
 ---
 import { NOT_FOUND } from '@epoxide/web-constants'
+import Layout from '../layouts/Layout.astro'
 ---
 
-<h1 class="title">{NOT_FOUND.TITLE}</h1>
-<section class="links">
-  <a href="/">{NOT_FOUND.GO_BACK}</a>
-</section>
+<Layout>
+  <h1 class="title">{NOT_FOUND.TITLE}</h1>
+  <section class="links">
+    <a href="/">{NOT_FOUND.GO_BACK}</a>
+  </section>
+</Layout>
 
 <style lang="scss">
   @use '@epoxide/web-assets/css/breakpoints';
