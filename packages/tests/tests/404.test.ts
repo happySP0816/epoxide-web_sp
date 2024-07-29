@@ -19,10 +19,11 @@ test('uses layout', async ({ page }) => {
 
 test('matches desktop snapshot', async ({ page }) => {
   await page.goto('/non-existing-route')
+  await page.setViewportSize({ width: 1920, height: 1080 })
   await expect(page).toHaveScreenshot(
     '../snapshots/404.test.ts.matches-desktop-snapshot.png',
     {
-      maxDiffPixelRatio: 0.1,
+      maxDiffPixelRatio: 0.01,
     },
   )
 })
@@ -33,7 +34,7 @@ test('matches mobile snapshot', async ({ page }) => {
   await expect(page).toHaveScreenshot(
     '../snapshots/404.test.ts.matches-mobile-snapshot.png',
     {
-      maxDiffPixelRatio: 0.1,
+      maxDiffPixelRatio: 0.01,
     },
   )
 })
