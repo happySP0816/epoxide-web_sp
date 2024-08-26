@@ -5,7 +5,7 @@ export const META = {
   THEME_COLOR: 'rgb(35, 38, 40)',
   SITE_NAME: 'epoxide',
   URL: 'https://epoxide.se',
-  LOCALE: 'en-US',
+  LOCALE: 'en_US',
   TYPE: 'website',
   OG_IMAGE: '/opengraph-image.png',
   TWITTER_IMAGE: '/twitter-image.png',
