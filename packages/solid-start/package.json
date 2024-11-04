@@ -19,7 +19,7 @@
     "start": "vinxi start",
     "version": "vinxi version",
     "lint": "eslint .",
-    "test": "playwright test --quiet"
+    "test": "playwright test"
   },
   "devDependencies": {
     "eslint-plugin-solid": "^0.14.3"
