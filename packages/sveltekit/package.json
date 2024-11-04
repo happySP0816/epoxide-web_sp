@@ -20,7 +20,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint .",
-    "test": "playwright test --quiet"
+    "test": "playwright test"
   },
   "devDependencies": {
     "@sveltejs/adapter-node": "^5.2.0",
