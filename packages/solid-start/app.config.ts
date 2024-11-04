@@ -1,3 +1,13 @@
 import { defineConfig } from '@solidjs/start/config'
 
-export default defineConfig({})
+export default defineConfig({
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern',
+        },
+      },
+    },
+  },
+})
