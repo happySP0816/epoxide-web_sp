@@ -19,7 +19,7 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "eslint .",
+    "lint": "eslint . --rule 'no-console: error' --rule 'prettier/prettier: error'",
     "test": "playwright test"
   },
   "devDependencies": {

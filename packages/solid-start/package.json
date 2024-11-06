@@ -18,7 +18,7 @@
     "build": "vinxi build",
     "start": "vinxi start",
     "version": "vinxi version",
-    "lint": "eslint .",
+    "lint": "eslint . --rule 'no-console: error' --rule 'prettier/prettier: error'",
     "test": "playwright test"
   },
   "devDependencies": {

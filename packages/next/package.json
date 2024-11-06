@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint .",
+    "lint": "eslint . --rule 'no-console: error' --rule 'prettier/prettier: error'",
     "test": "playwright test",
     "update-snapshots": "playwright test --update-snapshots"
   },
