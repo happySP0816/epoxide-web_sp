@@ -5,3 +5,4 @@ node_modules
 !.vscode/**/extensions.json
 test-results
 .nx
+.DS_Store
