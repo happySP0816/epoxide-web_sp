@@ -39,3 +39,17 @@ test('has robots.txt with sitemap', async ({ page }) => {
     'Sitemap: https://epoxide.se/sitemap.xml',
   )
 })
+
+test('has structured data with web site information', async ({ page }) => {
+  await page.goto('/')
+  await expect(
+    JSON.parse(
+      await page.locator('script[type="application/ld+json"]').innerText(),
+    ),
+  ).toStrictEqual({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'epoxide',
+    url: 'https://epoxide.se',
+  })
+})

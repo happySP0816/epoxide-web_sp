@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import '~/assets/css/app.css'
 import { META } from '@epoxide/web-constants'
+import StructuredData from '~/components/StructuredData.vue'
 </script>
 
 <template>
@@ -26,6 +27,9 @@ import { META } from '@epoxide/web-constants'
     <Meta name="theme-color" :content="META.THEME_COLOR" />
     <Link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="100x100" />
   </Head>
+  <StructuredData
+    :schema="{ '@type': 'WebSite', name: META.TITLE, url: META.URL }"
+  />
   <main>
     <slot />
   </main>

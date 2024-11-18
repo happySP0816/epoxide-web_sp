@@ -1,0 +1,18 @@
+{
+  "name": "@epoxide/web-types",
+  "version": "1.0.0",
+  "description": "Shared types for epoxide.se",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "author": {
+    "name": "Tomas Tannergren",
+    "email": "epoxide@epoxide.se",
+    "url": "https://epoxide.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epoxide/epoxide-web.git"
+  },
+  "license": "GPL-3.0-or-later"
+}

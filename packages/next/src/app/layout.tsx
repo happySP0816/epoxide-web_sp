@@ -5,6 +5,7 @@ import { META } from '@epoxide/web-constants'
 import type { Metadata, Viewport } from 'next'
 import { Footer } from '@/components/Footer'
 import epoxideLogo from '../../public/images/epoxide-logo-circle.svg'
+import { StructuredData } from '@/components/StructuredData'
 
 const raleway = Raleway({ subsets: ['latin'] })
 
@@ -57,6 +58,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
+        <StructuredData
+          schema={{ '@type': 'WebSite', name: META.TITLE, url: META.URL }}
+        />
         <main className={styles.main}>{children}</main>
         <Footer src={epoxideLogo} />
       </body>

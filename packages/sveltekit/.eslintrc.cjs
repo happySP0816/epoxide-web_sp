@@ -17,4 +17,5 @@ module.exports = {
   env: {
     browser: true,
   },
+  ignorePatterns: ['StructuredData.svelte'], // Crashes when parsing {@html} in Svelte
 }

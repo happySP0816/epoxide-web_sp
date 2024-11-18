@@ -10,7 +10,8 @@
     "packages/nuxt",
     "packages/solid-start",
     "packages/sveltekit",
-    "packages/tests"
+    "packages/tests",
+    "packages/types"
   ],
   "type": "module",
   "engines": {
@@ -60,5 +61,6 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }

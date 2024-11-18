@@ -2,6 +2,7 @@
 import '../styles/app.css'
 import { META } from '@epoxide/web-constants'
 import Footer from '../components/Footer.astro'
+import { StructuredData } from '@epoxide/web-next/src/components/StructuredData'
 ---
 
 <!doctype html>
@@ -30,6 +31,9 @@ import Footer from '../components/Footer.astro'
     <meta name="theme-color" content={META.THEME_COLOR} />
   </head>
   <body>
+    <StructuredData
+      schema={{ '@type': 'WebSite', name: META.TITLE, url: META.URL }}
+    />
     <main>
       <slot />
     </main>

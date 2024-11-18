@@ -5,6 +5,7 @@ import { Suspense } from 'solid-js'
 import './app.css'
 import { META } from '@epoxide/web-constants'
 import Footer from '~/components/Footer'
+import StructuredData from './components/StructuredData'
 
 export default function App() {
   return (
@@ -35,6 +36,9 @@ export default function App() {
             <meta name="color-scheme" content={META.COLOR_SCHEME} />
             <meta name="theme-color" content={META.THEME_COLOR} />
           </MetaProvider>
+          <StructuredData
+            schema={{ '@type': 'WebSite', name: META.TITLE, url: META.URL }}
+          />
           <main>
             <Suspense>{props.children}</Suspense>
           </main>
